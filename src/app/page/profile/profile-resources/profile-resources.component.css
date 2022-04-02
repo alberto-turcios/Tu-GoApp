@@ -1,0 +1,513 @@
+html{
+    background: rgb(4,129,220);
+    background: linear-gradient(90deg, rgba(4,129,220,1) 16%, rgba(4,204,236,1) 66%);
+    overflow-x: hidden;
+}
+
+
+#mt-balance{
+    color: #3E3E3E;
+}
+
+.cont-balance{
+    margin-top:80px;
+}
+
+.header-fa{
+    background-color: aliceblue;
+    background: linear-gradient(105.21deg, #1263B3 -16.12%, #00BDFF 137.25%, rgba(18, 99, 179, 0) 137.27%); 
+    border-bottom-left-radius: 40px; 
+    border-bottom-right-radius: 40px; 
+    height: 150px;
+    margin-bottom: -25px;
+
+}
+
+
+
+#col-img{
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    margin-top: -42px;
+}
+
+#name{
+    margin-top: -1px;
+    margin-left: -10px;
+}
+
+#col-text{
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    margin-top: -15px;
+    color: #1263B3;
+
+}
+
+
+#col-text-align{
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    margin-top:0px;
+    color: #1263B3;
+}
+
+#row-name{
+    margin-top:20px;
+}
+
+#mt-name{
+    text-align: center;
+    margin-left: -62px;
+    color: #1263B3;
+    margin-right: 20px;
+    margin-bottom: -20px;
+}
+
+#rounded-btn{
+    border-radius: 130px; 
+    width: 40px; 
+    height: 40px; 
+    background: linear-gradient(105.21deg, #1263B3 -16.12%, #00BDFF 137.25%, rgba(18, 99, 179, 0) 137.27%);
+}
+
+#align-item{
+    text-align: center; 
+    margin-left: -8px; 
+    margin-right: 5px; 
+    margin-top: -5px;
+}
+
+#container-hotel{
+    margin-top: 05px;
+    margin-bottom: -4px;
+}
+
+
+#card-show{
+    box-shadow: 0px 4px 4px rgb(219 219 219 / 45%);
+    border-radius: 10px !important;
+}
+
+#container-title-one{
+    margin-top: -45px;
+    margin-bottom: -5px;
+}
+
+#price-text{
+    color: #F88922 !important;
+    font-size: 30px;
+    margin-top:-13px;
+}
+
+.price-mt{
+    margin-top: -15px;
+}
+
+#text-secondary-ml{
+    font-size:18px;
+    color: #3e3e3e !important;
+}
+
+#chart-style{
+    margin-top:-15px;
+}
+
+#heading-hotel{
+    color:#3E3E3E !important;
+    font-weight: 500;
+    margin-left: -35px;
+}
+
+#heading-hotel-ml{
+    color:#3E3E3E !important;
+    font-weight: 400;
+    margin-left: 0px;
+    font-size:13px;
+}
+
+.sect-in{
+    background-color: #FFFFFF; 
+    margin-top:45px;
+}
+
+#room-i{
+    margin-left: 6px;
+    color:#1263B3;
+}
+
+.cont-information{
+    margin-top:-50px;
+     margin-bottom:50px;
+}
+
+#row-expense-date{
+    margin-top:-15px;
+    margin-bottom: 5px;
+}
+
+#credit-card-color{
+    color: #1263B4 !important;
+}
+
+.i-btn{
+    border-radius: 130px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(105.21deg, #1263B3 -16.12%, #00BDFF 137.25%, rgba(18, 99, 179, 0) 137.27%);
+
+}
+
+.a-btn{
+    text-align: center;
+    margin-left: -8px;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+#div-data{
+    margin-bottom: -5px !important;
+    margin-left: 20px;
+}
+
+#div-data-two{
+    margin-bottom: 30px !important;
+    margin-left: 20px;
+}
+
+#col-buttom{
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    margin-top: -15px;
+    color: #1263B3;
+    margin-top: -32px;
+}
+
+.mt-buttom{
+    border-style: none !important;
+}
+
+#icon-color{
+    color: #3e3e3e;
+    text-align: center;
+    font-size: 18px;
+}
+
+.btnClass{
+    border-radius: 50px; 
+    border: 2px solid #e8e8e8; 
+    border-color: #e8e8e8; 
+    background-color:#FFF; 
+    color: #979797; width: 80px;
+}
+
+.favorite-container{
+    background-color:#FDF9EA; 
+    margin-top: 30px;
+     margin-bottom: 30px; 
+     height:350px;
+      border-radius: 15px;
+}
+
+.heading-container{
+    color: #F88922; 
+    font-weight: 400;
+    margin-top:20px; 
+    margin-left:05px;
+}
+
+.b-container{
+    color: #F88922;
+}
+
+.mt-qr{
+    margin-top:20px;
+}
+
+#mt-room{
+    margin-left: 5px;
+    color: #09101D;
+}
+
+#contact-information{
+    margin-top:-12px !important; 
+    margin-left: 5px;
+    color: #09101D;
+    margin-bottom: -12px;
+}
+
+
+#col-text-mt{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    color: #1263B3;
+    margin-right: 22px;
+    margin-left: -22px;
+}
+
+#mt-room-2{
+    margin-left: -60px;
+    color: #09101D;
+}
+
+#price-heading{
+    color: #09101D;
+    margin-right: -5px;
+    font-weight: 100;
+}
+
+#price-heading-in{
+    color: #09101D;
+    margin-right: -5px;
+    font-weight: 100;
+}
+
+.top-container-favorite{
+    margin-top: -200px;
+}
+
+.favorite-produt{
+    height: 80px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 100px;
+}
+
+.product-img img {
+    max-height: 107%;
+    max-width: 113%;
+    border-radius: 5px; 
+}
+
+
+.header-inpt{
+    margin-bottom: -40px; 
+    margin-top: -5px;
+
+}
+
+#ft-size-span{
+    font-size:20px;
+}
+
+.container-recomendar{
+    margin-top:-285px; 
+    margin-bottom: 70px;
+}
+
+#mt-text{
+    margin-bottom:55px;
+}
+
+#search-inicio{
+    background-color: #fff; 
+    border-radius: 20px;
+    width:90%; 
+    margin-left: 4.5%;
+    box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);}
+
+.index-compas{
+    margin-left: -12px; 
+    color: black;
+}
+
+.head-color{
+    color:black;
+}
+
+#mt-mail{
+    color:#333333;
+    font-weight: 400;
+}
+
+.upper img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+.profile img {
+    height: 100px;
+    width: 100px;
+    margin-top: 2px
+}
+
+
+.mt-container{
+    margin-top:03px;
+    margin-bottom: -12px;
+}
+
+.text-align-cont{
+    text-align:center;
+}
+
+.head-div-explorer{
+    margin-top: 2px;
+    margin-left: -15%;
+}
+
+#menu-slide-form{
+    border-radius: 130px;
+    width: 40px; 
+    height: 40px; 
+    margin-bottom: -18px; 
+    background: linear-gradient(105.21deg, #1263B3 -16.12%, #00BDFF 137.25%, rgba(18, 99, 179, 0) 137.27%); 
+}
+
+.menu-slide-i{
+    text-align: center; 
+    margin-left: -8px; 
+    margin-right: -10px; 
+    margin-top: -5px;
+}
+
+#subtitle-span-menu{
+    color:white; 
+    text-transform:capitalize;
+}
+
+.mt-menu{
+    margin-top: 2px;
+}
+
+.category-color{
+    color: #fff;
+}
+
+#info{
+    margin-left: -08px;
+}
+
+
+#rounded-btn{
+    border-radius: 130px; 
+    width: 40px; 
+    height: 40px; 
+    background: linear-gradient(105.21deg, #1263B3 -16.12%, #00BDFF 137.25%, rgba(18, 99, 179, 0) 137.27%);
+}
+
+#align-item{
+    text-align: center; 
+    margin-left: -8px; 
+    margin-right: 5px; 
+    margin-top: -5px;
+}
+
+#container-hotel{
+    margin-top: 05px;
+    margin-bottom: -4px;
+}
+
+.ml-price{
+    margin-left: -15px;
+    color:#474747;
+
+}
+
+.m-panel{
+    margin:12px;
+}
+
+.ml-icons{
+    text-align: end;
+    color: #3DB784;
+}
+
+#mt-img{
+    margin:5px; 
+    margin-top: -05px; 
+    margin-bottom:20px;
+    margin-right: 20px;
+    margin-left: -10px;
+
+}
+
+#mt-img-line2{
+    margin:5px; 
+    margin-top: -25px; 
+    margin-bottom:20px;
+    margin-right: 20px;
+    margin-left: -10px;
+
+}
+
+#nav-delivery{
+    margin-bottom:15px !important;
+    
+}
+
+#br-buttom{
+    border-radius: 10px !important;
+}
+
+#br-buttom-edit{
+    margin-top: 15px !important;
+    margin-bottom: 40px !important;
+    border-radius: 15px !important;
+    border-style: none;
+    border: none;
+    width: 285px;
+}
+
+#card-show{
+    box-shadow: 0px 4px 4px rgb(219 219 219 / 45%);
+    border-radius: 10px !important;
+}
+
+#container-title-one{
+    margin-top: -45px;
+    margin-bottom: -5px;
+}
+
+#price-text{
+    color: #F88922 !important;
+    font-size: 30px;
+    margin-right: 7px;
+}
+
+#text-secondary-ml{
+    font-size:18px;
+    color: #3e3e3e !important;
+}
+
+#chart-style{
+    margin-top:-15px;
+}
+
+#heading-hotel{
+    color:#3E3E3E !important;
+    font-weight: 500;
+    margin-left: -35px;
+}
+
+#heading-hotel-ml{
+    color:#3E3E3E !important;
+    font-weight: 400;
+    margin-left: -35px;
+    font-size:13px;
+}
+
+#row-expense-date{
+    margin-top:-15px;
+    margin-bottom: 5px;
+}
+
+#credit-card-color{
+    color: #1263B4 !important;
+}
+
+#nav-tabContent{
+    margin-top:-20px;
+}
+
+.number-type{
+    font-weight: 400;
+}

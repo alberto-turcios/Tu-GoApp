@@ -1,0 +1,50 @@
+<section class="section-food-main">
+    <div class="container">
+        <div class="row" *ngFor="let plato of platillosArray" >
+            <div [routerLink]="['/detalle/plato', plato.id]" class="col-sm-6 col-md-6 col-lg-6 mb-3">
+                <div class="food-card food-card--vertical bg-white rounded-lg overflow-hidden mb-4 shadow">
+                    <div class="food-card_img position-relative">
+                        <img src="{{plato.img}}" alt="">
+                        <div class="container mt-container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button id="btn-time"> <img id="btn-img-time" src="{{path}}images/clock.svg" alt=""> {{plato.time}} min </button>
+                                </div>
+                                <div class="col-6">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card_content">
+                        <div class="food-card_title-section overflow-hidden">
+                            <h4 class="food-card_title"><a href="#!" class="text-dark">{{plato.name}}</a></h4>
+                            <div class="d-flex justify-content-between">
+                                <a class="food-card_author">{{plato.category}}</a>
+                                <div class="mb-10" class="div-card" >
+                                    <button  id="btn-calification"> {{plato.califications}} <img class="img-calification" src="{{path}}images/star.svg" width="12px" height="12px" alt="">  </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card_bottom-section" class="mt-card-food">
+                            <div class="d-flex justify-content-between"> 
+                                <div>
+                                    <div class="food-card_price">
+                                        <span id="food-card_price-span">$ {{plato.price}}</span>
+                                    </div>                                
+                                </div>
+                                <div class="mt-div-food"><img class="mt-class-img" src="{{path}}images/fire.svg" width="20px" height="20px" alt=""> {{plato.calories}} Kcal</div>
+                            </div>
+                            <hr>
+                            <div class="container" class="div-mt-par">
+                                <p class="color-par">{{plato.description}}</p>
+                            </div>
+                            
+                        </div>							
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+<div class=" header-fa" >
+    <div class="row no-gutters">
+        <div (click)="onClick()" class="col-auto">
+            <button  class="btn  btn-link text-dark menu-btn"><img src="{{path}}img/menu_white.png" alt=""></button>
+        </div>
+        <div class="col text-center "><img routerLink="/inicio" class="img-header"  src="{{path}}img/Group19.png" alt="" class="header-logo"></div>
+        <div class="col-auto">
+            <a routerLink=""  class="btn icon-circle btn-link text-dark"><i class="bi bi-bell" id="bell"></i></a>
+        </div>
+        <div class="data-food">
+            <h4 class="heading-text">{{title_1}}</h4>
+            <p class="heading-text paragraphs-data-food">{{paragraphs_1}}</p>
+        </div>
+    </div>
+
+    <div class="header-inpt">
+        <input type="text" id="search-inicio" class="form-control form-control-lg fa-input my-3 fa-input" placeholder="Search">
+    </div>
+</div>
+
+<div class="container">
+       <div class="container header-top">
+        <div class="row">
+          <div class="col-3 align-text" *ngFor="let category of categories" ><button type="button" class="rounded-pill btn-sm btnClass" data-toggle="button" aria-pressed="false" autocomplete="off" >{{category.name}}</button></div>
+        </div>
+    </div> 
+</div>

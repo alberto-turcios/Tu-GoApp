@@ -1,0 +1,139 @@
+
+<section id="border-section">
+    <button type="button" id="ng-mx-width"  class="btn btn-link text-dark menu-btn" (click)="addItem()"><img src="{{path}}images/love.svg" [ngStyle]="{'max-width':'35px'}" class="img-more" alt=""></button>
+    <div class="container" id="cont-border">
+        <h5 id="details-title">{{title}}</h5>
+        <div class="row">
+            <div class="col-6">
+                <p id="category-title">{{category}}</p>
+            </div>
+            <div class="col-6">
+                <a routerLink="/valoracion/plato/1" id="value">Ver valoraciones</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <p id="value-description">Descripcion</p>
+            </div>
+            <div class="col-6">
+                <a id="value-caloric">Valor Calorico</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-7">
+                <p id="description">{{description}}</p>
+            </div>
+            <div class="col-5">
+                <div class="mt-div-food">
+                    <img class="mt-class-img" src="{{path}}images/fire.svg" width="20px" height="20px" alt=""> 
+                    145 Kcal
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <div class="mt-div-time">
+                    Porcion Personal
+                    <img class="mt-class-time" src="{{path}}img/clock-pink.svg" width="12px" height="12px" alt=""> 
+                    10 Min
+                </div>            
+            </div>
+            <div class="col-4">
+            
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10">
+                <p id="value-complemento">Agregar conplemento</p>
+            </div>
+            <div class="col-2">
+                <a id="value-caloric"></a>
+            </div>
+        </div>
+
+
+        <div class="row" *ngFor="let complementos of complementosArray">
+            <div class="col-9">
+                <label id="label-in" class="checkbox-wrap checkbox-primary mb-3">{{complementos.name}}
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="col-3" id="mt-in" >
+                <a>+ {{complementos.precio}}</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10">
+                <p id="value-complemento">Agregar Bebidas</p>
+            </div>
+            <div class="col-2">
+                <a id="value-caloric"></a>
+            </div>
+        </div>
+
+
+        <div class="row" *ngFor="let bebidas of bebidasArrays">
+            <div class="col-9">
+                <label id="label-in" class="checkbox-wrap checkbox-primary mb-3">{{bebidas.name}}
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="col-3" id="mt-in" >
+                <a>+ {{bebidas.precio}}</a>
+            </div>
+        </div>
+
+
+        <hr class="hr-design">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <form class="signin-form">
+                            <div class="form-group mb-3">
+                                <textarea class="form-control" id="direccion" placeholder="Agregar nota de la comida" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-design">
+
+        <div class="container " >
+            <div class="row cont-inf">
+                <div class="col-8">
+                    <button type="button" class="btn btn-link text-dark menu-btn" (click)="removeItem()"><img src="{{path}}img/less.svg" [ngStyle]="{'max-width':'35px'}" class="img-more" alt=""></button>
+                    <button class="btn btn-link text-dark menu-btn">
+                        <img src="{{path}}img/center.svg" [ngStyle]="{'max-width':'42px', 'margin-left': '5px'}" class="img-more" alt="">
+                        <h5 [ngStyle]="{'margin-top': '-39px', 'margin-left': '18px', 'font-size': '23px', 'color':'#123FB4'}" (click)="price_new(amount)">{{amount}}</h5>
+                    </button>
+                    <button type="button" class="btn btn-link text-dark menu-btn" (click)="addItem()"><img src="{{path}}img/more.svg" [ngStyle]="{'max-width':'35px', 'margin-left': '18px'}" class="img-more" alt=""></button>
+                </div>
+                <div class="col-4 div-look-more">
+                    <h4 class="text-success font-weight-normal mb-0" id="price-title">$ {{price}}</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container"[ngStyle]="{'margin-top': '20px'}">
+            <div class="form-group mb-div-inicio">
+                <button type="submit" routerLink="/confirmar-pago" id="pay-now" class="form-control btn btn-primary rounded submit px-3">AGREGAR A LA ORDEN
+                </button>
+            </div> 
+        </div>
+
+        <div class="container"[ngStyle]="{'margin-top': '40px'}">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+</section>

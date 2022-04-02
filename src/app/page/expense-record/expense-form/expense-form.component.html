@@ -1,0 +1,88 @@
+<section>
+    <div class="container">
+        <div class="container" id="container-title-one">
+            <div class="row">
+                <div class="col-8">
+                    <h6 class="subtitle sb-heading" >Tu Actividad</h6>
+                </div>
+            </div>
+            <div class="row" id="row-expense-date">
+                <div class="col-2" id="credit-card-color">
+                    <i class="bi bi-calendar3"></i>                
+                </div>
+                <div class="col-10">
+                    <h6  id="heading-hotel-ml">1-07-2022 - 28-07-2022</h6>
+                </div>
+            </div>
+        </div> 
+        <div class="card mb-3 border-0 shadow-sm" id="card-show">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col pl-0 ml-5">
+                        <p class="text-secondary mb-1" id="text-secondary-ml" >Balance de Gastos</p>
+                        <h4 class="text-dark my-0" id="price-text">$ {{price}}</h4>
+                    </div>
+                </div>
+                <div class="col-12" id="chart-style">
+                    <canvas id="line_chart" width="400px" height="250px"></canvas>
+                  </div>
+            </div>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="container" id="container-hotel">
+                <div class="row">
+                    <div class="col-2" id="credit-card-color">
+                        <i class="bi bi-credit-card"></i>
+                    </div>
+                    <div class="col-10">
+                        <h6  id="heading-hotel">Gastos dentro del  hotel</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show active mb-5" id="nav-delivery" role="tabpanel" aria-labelledby="nav-delivery-tab">
+                <ul class="list-items">
+                    <li>
+                        <div class="row">
+                            <div class="col-10">
+                                Clases de surf 
+                            </div>
+                            <div class="col-2">
+                                <a class="ml-price">$70.00</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-10">
+                                Clases de surf 
+                            </div>
+                            <div class="col-2">
+                                <a class="ml-price" >$70.00</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-10">
+                                Clases de surf 
+                            </div>
+                            <div class="col-2">
+                                <a class="ml-price" >$70.00</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-10">
+                                Clases de surf 
+                            </div>
+                            <div class="col-2 " >
+                                <a class="ml-price" >$70.00</a>
+                            </div>                     
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

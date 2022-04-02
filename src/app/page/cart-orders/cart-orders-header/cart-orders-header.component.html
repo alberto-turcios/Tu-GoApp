@@ -1,0 +1,117 @@
+<section>
+    <div class="container">
+            <div class="row " id="mt-row">
+                <div class="col-6" id="col-mt">
+                    <i class="icon-svg bi bi-cart3"></i><a id="number-data" class="a-product">{{cartItem}}</a>
+                </div>
+                <div class="col-5" id="align-second">
+                    <button  type="submit" class="form-control btn rounded submit px-3 mt-0 mt-buttom" id="btn-cancelar">
+                        Cancelar Orden
+                    </button>
+                </div>
+            </div>
+    </div>
+
+    <div class="container mt-top" *ngFor="let getCartDetail of getCartDetails">
+        <div class="row">
+            <div class="col-2" id="mt-div-cart" >
+                <img id="img-cart"  src="{{getCartDetail.img}}" alt="" srcset="">
+            </div>
+            <div class="col-6 mt-head">
+                <h6 id="title-description">{{getCartDetail.name}}</h6>
+                <p id="title-description2">{{getCartDetail.description}}</p>
+                <h6 id="price-title"  class="ft-ngCart text-success font-weight-normal">$ {{getCartDetail.price}}</h6>                
+            </div>
+            <div class="col-4 mt-count">
+                <button type="button" id="btn-less"  class="btn btn-link text-dark menu-btn" (click)="removeItem(getCartDetail);" ><img src="{{path}}img/less.svg"  [ngStyle]="{'max-width':'25px', 'margin-top':'6px'}" class="img-more" alt=""></button>
+                <button class="btn btn-link text-dark menu-btn">
+                    <img src="{{path}}img/center.svg" [ngStyle]="{'max-width':'35px', 'margin-left': '7px'}" class="img-more" alt="">
+                    <h5 [ngStyle]="{'margin-top': '-35px', 'margin-left': '17px', 'font-size': '23px', 'color':'#123FB4'}" (click)="price_new(amount)">{{getCartDetail.qty}}</h5>
+                </button>
+                <button type="button" class="btn btn-link text-dark menu-btn" (click)="addItem(getCartDetail);" ><img src="{{path}}img/more.svg" [ngStyle]="{'max-width':'25px', 'margin-top':'7px','margin-left': '18px'}" class="img-more" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="col-text">
+        <div class="row">
+            <div class="col-12">
+                <button  type="submit" class="form-control btn rounded submit px-3 mt-0 mt-buttom" id="btn-more-product">
+                    <i style="color:#000;" class="bi bi-plus-lg"></i>Agregar Producto
+                </button>            
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="card-orders">
+        <div class="row" [ngStyle]="{'margin-bottom': '8px'}">
+            <div class="col" [ngStyle]="{'margin-left': '-15px', 'margin-right': '-37px'}">
+                <button class="btn btn-link text-dark menu-btn">
+                    <img src="{{path}}img/ticket.png" [ngStyle]="{'max-width':'55px', 'margin-left': '0px', 'margin-top':'2px'}" alt="">
+                </button>
+            </div>
+            <div class="col"  >
+                <div class="signin-form">
+                    <div class="form-group mb-3 mt-3">
+                        <input  type="text"  id="code-promotion" class="form-control" placeholder="Codigo promocional" required> 
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <button class="btn btn-link text-dark menu-btn">
+                    <img src="{{path}}img/export.png" [ngStyle]="{'max-width':'40px', 'margin-top': '11px','margin-left': '10px'}" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="row" id="ml-price">
+            <div class="col card-align">
+                <h6 class="subtitle sb-heading" >SubTotal</h6>
+            </div>
+            <div class="col card-align"  >
+                <h6 class="subtitle sb-heading" >IVA</h6>
+            </div>
+            <div class="col card-align">
+                <h6 class="subtitle sb-heading" >Descuento</h6>
+            </div>
+        </div>
+        <div class="row" id="ml-price-head">
+            <div class="col card-align">
+                <p class="subtitle sb-heading" >$10.40</p>
+            </div>
+            <div class="col card-align"  >
+                <p class="subtitle sb-heading" >$1.40</p>
+            </div>
+            <div class="col card-align">
+                <p class="subtitle sb-heading" >$1.40</p>
+            </div>
+        </div>
+        <hr class="class-3" />
+        <div class="row" id="price-total">
+            <div class="col card-align">
+            </div>
+            <div class="col card-align"  >
+                <h6 class="subtitle sb-heading" >TOTAL</h6>
+            </div>
+            <div class="col card-align">
+            </div>
+        </div>
+        <div class="row" id="ml-price-head">
+            <div class="col card-align">
+            </div>
+            <div class="col card-align"  >
+                <h3 class=" sb-heading" >$10.40</h3>
+            </div>
+            <div class="col card-align">
+            </div>
+        </div>
+        <div class="container" id="col-text">
+            <div class="row">
+                <div class="col-12">
+                    <button type="submit" routerLink="/confirmar-pago" [ngStyle]="{'margin-top': '-30px', 'margin-bottom': '10px'}"  class="form-control btn btn-primary rounded submit px-3">PROCESAR ORDEN
+                    </button>           
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

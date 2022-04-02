@@ -1,0 +1,26 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": "./", 
+        "paths": {
+            "@app/*": ["src/app/*"],
+            "@page/*": ["src/app/page/*"],
+            "@modules/*": ["src/app/modules/*"],
+            "@encoding/*": ["src/environments/*"]
+        }, 
+        "outDir": "./dist/tu-go-app", 
+        "sourceMap": true, 
+        "declaration": false,
+        "experimentalDecorators": true, 
+        "downlevelIteration":true, 
+        "moduleResolution": "node", 
+        "importHelpers": true,
+        "target": "es2015", 
+        "module": "es2020", 
+        "lib": [
+            "es2018", 
+            "dom"
+        ]
+
+    }
+}

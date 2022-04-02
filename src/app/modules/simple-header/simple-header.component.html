@@ -1,0 +1,20 @@
+<section>
+    <div class="header header-fa" >
+        <div class="row no-gutters">
+            <div (click)="onClick()" class="col-auto">
+                <button  class="btn  btn-link text-dark menu-btn"><img src="{{path}}img/menu_white.png" alt=""><span class="new-notification"></span></button>
+            </div>
+            <div class="col text-center"><img src="{{path}}img/Group19.png" alt="" class="header-logo"></div>
+            <div class="col-auto">
+                <a routerLink="/perfil" class="btn  btn-link text-dark"><i class="bi bi-bell" id="bell"></i></a>
+            </div>
+            <h4 class="heading-text-favorite">{{pageTitle}}</h4>
+            <p class="heading-text-p" id="heading-text">{{description}}</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container" id="container-title-one">
+        </div> 
+
+    </div>
+</section>

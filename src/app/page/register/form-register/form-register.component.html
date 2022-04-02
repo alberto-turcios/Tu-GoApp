@@ -1,0 +1,72 @@
+<section class="ftco-section section-register">
+    <div class="mask d-flex align-items-center h-100">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+              <div class="card card-div">
+                <div class="card-body p-4">
+                    <div class="d-flex">
+                        <div class="w-100">
+                            <h2 class="mb-2 heading-register">Registro</h2>
+                          <p class="heading-description">Crea una nueva cuenta</p>
+                        </div>
+                    </div>      
+
+                  <form [formGroup]="RegisterForm" (ngSubmit)="onRegister()">
+
+                    <div class="form-group mb-3">
+                        <input matInput formControlName="name" type="text" class="form-control" placeholder="Nombre del Usuario" required>
+                        <mat-error *ngIf="isValidField('name')" >
+                          {{getErrorMessage('name')}}
+                      </mat-error>
+                    </div>
+                      
+                    <div class="form-group mb-3">
+                        <input matInput formControlName="mail" type="text" class="form-control" placeholder="mail@mail.com" required>
+                        <mat-error *ngIf="isValidField('mail')" >
+                          {{getErrorMessage('mail')}}
+                      </mat-error>
+                    </div>
+
+    
+                    <div class="form-group mb-3">
+                        <input matInput formControlName="password" type="password"  autocomplete="current-password"  id="id_password" name="password" class="form-control" placeholder="Contraseña" required >
+                        <span (click)="onClick()" class="bi bi-eye errspan password-input"  id="togglePassword" ></span>		
+                        <mat-error *ngIf="isValidField('password')" >
+                          {{getErrorMessage('password')}}
+                      </mat-error>				
+                      </div>
+
+                    <div class="form-group mb-3">
+                        <input matInput formControlName="password" type="password"  autocomplete="current-password"  name="password" class="form-control" placeholder="Repita Contraseña" required >
+                        <mat-error *ngIf="isValidField('password')" >
+                          {{getErrorMessage('password')}}
+                      </mat-error>
+                    </div>
+                    <div class="w-100 text-left">
+                        <label class="checkbox-wrap checkbox-primary mb-3">Acepto los terminos y condiciones
+                                  <input type="checkbox" checked>
+                                  <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="form-group mb-div-inicio">
+                      <button type="submit" class="form-control btn btn-primary rounded submit px-3" >REGISTRARSE <i class="bi bi-arrow-right icon-sesion" ></i>
+                      </button>
+                  </div>
+                  <div class="or-seperator" id="mt-o" ><i id="icon-hr">O</i></div>
+                      <div class="text-center social-btn">
+                          <a href="#" class="btn btn-secondary"><img src="{{path}}images/google.svg"  id="ml-head" width="22" height="22"/></a>
+                          <a href="#" class="btn btn-info"> <img src="{{path}}images/facebook.svg" id="ml-head" width="22" height="22"/> </a>
+                          <a href="#" class="btn btn-danger"> <img src="{{path}}images/tiktok.svg" id="ml-head" width="22" height="22"/></a>
+  
+                      </div>
+                  </form>
+                  <p class="final-paragraphs mt-4">Ya tienes cuenta? <a data-toggle="tab" routerLink="" class="title-sesion">Iniciar Sesión</a></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+</section>

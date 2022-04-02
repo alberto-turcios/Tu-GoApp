@@ -1,0 +1,32 @@
+
+#menu-slide-form{
+    border-radius: 130px;
+    width: 40px; 
+    height: 40px; 
+    margin-bottom: -18px; 
+    background: linear-gradient(105.21deg, #1263B3 -16.12%, #00BDFF 137.25%, rgba(18, 99, 179, 0) 137.27%); 
+}
+
+.menu-slide-i{
+    text-align: center; 
+    margin-left: -8px; 
+    margin-right: -10px; 
+    margin-top: -5px;
+}
+
+#subtitle-span-menu{
+    color:white; 
+    text-transform:capitalize;
+}
+
+.mt-menu{
+    margin-top: 2px;
+}
+
+.category-color{
+    color: #fff;
+}
+
+#info{
+    margin-left: -08px;
+}

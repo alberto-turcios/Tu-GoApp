@@ -1,0 +1,48 @@
+.section-back{
+    background-color:#1263B3;
+}
+
+.br-card{
+    border-radius: 15px;
+}
+
+.heading-password{
+    color: #333333; 
+    font-weight: 600;
+}
+
+.paragraphs-pasword{
+    color: #3E3E3E;
+}
+
+.div-img-password{
+    margin-top: 25px; 
+    margin-bottom: 35px;
+}
+
+
+.text-password{
+    text-align: left !important;
+     margin-bottom: 150px;
+      font-size: 14px;
+}
+
+.mb-form{
+    margin-bottom: 15px;
+}
+
+.ml-i{
+    margin-left: 10px;
+}
+
+.reformat-text{
+    text-align: left !important; 
+    margin-top: 40px; 
+    font-size: 14px;
+}
+
+.password-btn{
+    text-align: right !important; 
+    margin-left: 10px; 
+    font-size: 14px;
+}

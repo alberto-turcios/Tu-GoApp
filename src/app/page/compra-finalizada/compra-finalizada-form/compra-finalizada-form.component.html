@@ -1,0 +1,110 @@
+<div class="container" id="card-orders">
+    
+    <div class="row" id="ml-price">
+        <div class="col car-align">
+            <h6 class="subtitle sb-heading" >SubTotal</h6>
+        </div>
+        <div class="col car-align"  >
+            <h6 class="subtitle sb-heading" >IVA</h6>
+        </div>
+        <div class="col car-align">
+            <h6 class="subtitle sb-heading" >Descuento</h6>
+        </div>
+    </div>
+    <div class="row" id="ml-price-head">
+        <div class="col car-align">
+            <p class="subtitle sb-heading" >$10.40</p>
+        </div>
+        <div class="col car-align"  >
+            <p class="subtitle sb-heading" >$1.40</p>
+        </div>
+        <div class="col car-align">
+            <p class="subtitle sb-heading" >$1.40</p>
+        </div>
+    </div>
+    <hr class="class-3"/>
+    <div class="row" id="price-total">
+        <div class="col car-align">
+        </div>
+        <div class="col car-align"  >
+            <h6 class="subtitle sb-heading" >TOTAL</h6>
+        </div>
+        <div class="col car-align">
+        </div>
+    </div>
+    <div class="row" id="ml-price-head">
+        <div class="col car-align">
+        </div>
+        <div class="col car-align"  >
+            <h3 class=" sb-heading" >$10.40</h3>
+        </div>
+        <div class="col car-align">
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="card-orders" [ngStyle]="{'margin-top':'130px'}">
+    <div class="row row-check" id="price-total" [ngStyle]="{'margin-bottom': '20px'}" >
+        <div class=" car-align"  >
+            <button class="btn btn-link text-dark menu-btn">
+                <img src="{{path}}img/export.png" id="img-check" alt="">
+            </button>        
+        </div>
+    </div>
+
+    <div class="row" id="price-total" [ngStyle]="{'margin-bottom': '15px'}">
+        <div class="col-3 car-align">
+        </div>
+        <div class="col-6 car-align"  >
+            <p class="subtitle sb-heading" >Tu compra se realizo con exito.</p>
+        </div>
+        <div class="col-3 car-align">
+        </div>
+    </div>
+
+    <div class="row" id="price-total" [ngStyle]="{'margin-bottom': '35px'}">
+        <div class="col-1 car-align">
+        </div>
+        <div class="col-10 car-align"  >
+            <p>Tus productos adquiridos seran entregados en tu habitacion</p>
+        </div>
+        <div class="col-1 car-align">
+        </div>
+    </div>
+
+    <div class="row" id="price-total" [ngStyle]="{'margin-bottom': '35px'}">
+        <div class="col-2 car-align">
+            <img src="{{path}}img/room.svg" id="img-room" alt="">
+        </div>
+        <div class="col-10" id="black-text">
+            <p>Habitación Reservada: {{room}}</p>
+        </div>
+    </div>
+
+    <div class="row" id="price-total" [ngStyle]="{'margin-bottom': '35px'}">
+        <div class="col-2 car-align">
+            <img src="{{path}}img/user.svg" id="img-room" alt="">
+        </div>
+        <div class="col-10" id="black-text">
+            <p>Tu: {{user}}</p>
+        </div>
+    </div>
+
+
+    <div class="row" id="price-total" [ngStyle]="{'margin-bottom': '35px'}">
+        <div class="col-2 car-align">
+            <img src="{{path}}img/clock.svg" id="img-room" alt="">
+        </div>
+        <div class="col-10" id="black-text">
+            <p>{{message}}</p>
+        </div>
+    </div>
+
+    <div class="row" id="price-total" [ngStyle]="{'margin-bottom': '35px'}">
+        
+    </div>
+
+</div>
+
+

@@ -1,0 +1,87 @@
+html{
+    background: rgb(4,129,220);
+    background: linear-gradient(90deg, rgba(4,129,220,1) 16%, rgba(4,204,236,1) 66%);
+    overflow-x: hidden;
+}
+
+
+.header-fa{
+    height: 250px;
+    background-image: url(../../../assets/images/20497496.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: -25px;
+
+}
+
+.i-btn{
+    border-radius: 130px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(105.21deg, #1263B3 -16.12%, #00BDFF 137.25%, rgba(18, 99, 179, 0) 137.27%);
+
+}
+
+.a-btn{
+    text-align: center;
+    margin-left: -8px;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+.data-food{
+    margin-left: 5px;
+    margin-top: 100px;
+    background: rgba(0,0,0,0.3);
+    width: 60%;
+    height: 78px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+.btnClass{
+    border-radius: 50px; 
+    border: 2px solid #e8e8e8; 
+    border-color: #e8e8e8; 
+    background-color:#FFF; 
+    color: #979797; width: 80px;
+}
+
+.favorite-container{
+    background-color:#FDF9EA; 
+    margin-top: 30px;
+     margin-bottom: 30px; 
+     height:350px;
+      border-radius: 15px;
+}
+
+.heading-container{
+    color: #F88922; 
+    font-weight: 400;
+    margin-top:20px; 
+    margin-left:05px;
+}
+
+.b-container{
+    color: #F88922;
+}
+
+.top-container-favorite{
+    margin-top: -200px;
+}
+
+.favorite-produt{
+    height: 80px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 100px;
+}
+
+.product-img img {
+    max-height: 107%;
+    max-width: 113%;
+    border-radius: 5px; 
+}

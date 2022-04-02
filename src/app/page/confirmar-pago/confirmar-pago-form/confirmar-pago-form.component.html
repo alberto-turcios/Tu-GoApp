@@ -1,0 +1,89 @@
+<div class="container" id="card-orders">
+    
+    <div class="row" id="ml-price">
+        <div class="col car-align">
+            <h6 class="subtitle sb-heading" >SubTotal</h6>
+        </div>
+        <div class="col car-align"  >
+            <h6 class="subtitle sb-heading" >IVA</h6>
+        </div>
+        <div class="col car-align">
+            <h6 class="subtitle sb-heading" >Descuento</h6>
+        </div>
+    </div>
+    <div class="row" id="ml-price-head">
+        <div class="col car-align">
+            <p class="subtitle sb-heading" >$10.40</p>
+        </div>
+        <div class="col car-align"  >
+            <p class="subtitle sb-heading" >$1.40</p>
+        </div>
+        <div class="col car-align">
+            <p class="subtitle sb-heading" >$1.40</p>
+        </div>
+    </div>
+    <hr class="class-3" />
+    <div class="row" id="price-total">
+        <div class="col car-align">
+        </div>
+        <div class="col car-align"  >
+            <h6 class="subtitle sb-heading" >TOTAL</h6>
+        </div>
+        <div class="col car-align">
+        </div>
+    </div>
+    <div class="row" id="ml-price-head">
+        <div class="col car-align">
+        </div>
+        <div class="col car-align"  >
+            <h3 class=" sb-heading" >$10.40</h3>
+        </div>
+        <div class="col car-align">
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-pay">
+    <div class="row">
+        <div class="col" [ngStyle]="{'text-align': 'left', 'margin-left': '-5px'}">
+            <div class="row">
+                <div class="col-4">
+                    <button class="btn btn-link text-dark menu-btn">
+                        <img src="{{path}}img/visa-pay.svg" [ngStyle]="{'max-width':'55px', 'margin-left': '0px'}" alt="">
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-link text-dark menu-btn">
+                        <img src="{{path}}img/bullpoint.png" [ngStyle]="{'max-width':'32px', 'margin-left': '10px', 'margin-top': '23px'}" alt="">
+                    </button>   
+                </div>
+                <div class="col-4">
+                    <h6 class="subtitle sb-heading" style="margin-top:27px;" id="cuidado-personal">{{number}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col"  [ngStyle]="{'text-align': 'right', 'margin-right': '15px', 'margin-top': '38px'}">
+            <h5 class="sb-heading" >$10.40</h5>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div>
+        <div class="form-group mb-div-inicio">
+            <button type="submit" routerLink="/compra-finalizado" id="pay-now" class="form-control btn btn-primary rounded submit px-3">PAGAR AHORA
+            </button>
+        </div> 
+    </div>
+</div>
+
+<div class="container">
+    <div class=" ">
+        <div class="form-group mb-div-inicio">
+            <button type="submit" id="btn-paypal" class="form-control rounded submit px-3">
+                <img src="{{path}}img/paypal.svg" id="paypal-svg" alt="" srcset="">
+            </button>
+        </div> 
+    </div>
+</div>

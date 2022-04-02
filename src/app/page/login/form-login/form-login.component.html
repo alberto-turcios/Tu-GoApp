@@ -1,0 +1,60 @@
+<section class="ftco-section section-class">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <div class="wrap d-md-flex">
+                    <div class="img img-register"></div>
+                    <div class="login-wrap p-4 p-md-5 mt-login" >
+                        <div class="d-flex">
+                            <div class="w-100">
+                                <h2 class="mb-2 heading-title">Inicio de Sesión</h2>
+                                <p class="paragraphs-descripcion" >Inicia sesión para Continuar</p>
+                            </div>
+                        </div>
+                        <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="signin-form">
+                                <div class="form-group mb-3 mt-4">
+                                        <input matInput formControlName="mail" type="text" class="form-control" placeholder="mail@mail.com" required>
+                                        <mat-error *ngIf="isValidField('mail')" >
+                                            {{getErrorMessage('mail')}}
+                                        </mat-error>
+                                </div>
+                            <div class="form-group mb-3">
+                                <input formControlName="password" type="password"  id="id_password" class="form-control" placeholder="ingrese contraseña" required >
+                                <mat-error *ngIf="isValidField('password')" >
+                                    {{getErrorMessage('password')}}
+                                </mat-error>
+                                <span (click)="onClick()" class="bi bi-eye errspan password-input"  id="togglePassword" ></span>						
+                            </div>
+
+                            <div class="w-50 text-left" required>
+                                <label class="checkbox-wrap checkbox-primary mb-3">Recordar datos
+                                        <input type="checkbox" checked required>
+                                        <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="form-group mb-div-inicio">
+                                <button type="submit" class="form-control btn btn-primary rounded submit px-3">INICIAR SESION <i class="bi bi-arrow-right icon-sesion" ></i>
+                                </button>
+                            </div>
+                            <p class="paragraphs-inicio" >¿Olvidaste tus datos de inicio de sesion? <a data-toggle="tab" routerLink="/recuperar-contraseña" class="title-sesion">Obtén ayuda</a></p>
+                            <div class="or-seperator" id="mt-o" ><i id="icon-hr">O</i></div>
+                                <div class="text-center social-btn">
+                                    <a href="#" class="btn btn-secondary"><img src="{{path}}images/google.svg"  id="ml-head" width="22" height="22"/></a>
+                                    <a href="#" class="btn btn-info"> <img src="{{path}}images/facebook.svg" id="ml-head" width="22" height="22"/> </a>
+                                    <a href="#" class="btn btn-danger"> <img src="{{path}}images/tiktok.svg" id="ml-head" width="22" height="22"/></a>
+
+                                </div>
+                        </form>
+
+                       
+
+
+                    <p class="final-paragraphs mt-4">¿No tienes cuenta? <a data-toggle="tab" routerLink="/registro" class="title-sesion">Registrate</a></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

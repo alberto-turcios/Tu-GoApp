@@ -1,0 +1,46 @@
+.sb-heading{
+    color:#3e3e3e; 
+    margin-top: -7px;
+}
+
+.div-look-more{
+    margin-top:08px;
+}
+
+.cont-card-body{
+    margin-top:-15px;
+}
+
+#mt-cont-recom{
+    margin-top: -23px;
+    margin-bottom: -5px;
+}
+
+.ml-card{
+    margin-left:-20px;
+}
+
+.ml-card-2{
+    margin-right:-20px;
+    margin-top: -03px;
+
+}
+
+#rounded-btn{
+    border-radius: 130px; 
+    width: 40px; 
+    height: 40px; 
+    background: linear-gradient(105.21deg, #1263B3 -16.12%, #00BDFF 137.25%, rgba(18, 99, 179, 0) 137.27%);
+}
+
+#vm-tittle{
+    font-size: 14px;
+}
+
+#align-item{
+    text-align: center; 
+    margin-left: -8px; 
+    margin-right: 5px; 
+    margin-top: -5px;
+}
+

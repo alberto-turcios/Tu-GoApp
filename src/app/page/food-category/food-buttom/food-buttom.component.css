@@ -1,0 +1,21 @@
+.mt-food-row{
+    margin-top:100px;
+}
+
+.container-food{
+    margin-top:10px;
+}
+
+.text-align{
+    text-align:center;
+}
+
+.img-food{
+    border-radius: 50px; 
+    width: 80px;
+    height: 100;
+}
+
+.color-h5{
+    color: #707070;
+}

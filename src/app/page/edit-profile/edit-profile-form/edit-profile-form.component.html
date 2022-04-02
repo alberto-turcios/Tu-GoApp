@@ -1,0 +1,48 @@
+<div class="container mt-0">
+    <div class="row">
+        <div class="col-12" id="contact-information" >
+            <h6 >Edita tus datos</h6>
+        </div>
+    </div>
+</div>
+
+<form class="signin-form">
+    <div class="form-group mb-3 mt-4">
+        <input  type="text"  id="" class="form-control" placeholder="Nombre del Usuario" required> 
+    </div>
+<div class="form-group mb-3">
+        <input  type="text" class="form-control" placeholder="mail@mail.com" required>
+</div>
+
+<div class="form-group mb-3">
+    <input  type="number" class="form-control" placeholder="Telefono" required>
+</div>
+
+<div class="form-group mb-3">
+    <textarea class="form-control" id="direccion" placeholder="Direccion" required></textarea>
+</div>
+
+<div class="form-group mb-3" [ngStyle]="{'margin-bottom': '30px'}">
+    <span class="span-ad">Plan Adquirido</span>
+    <select class="form-control form-select form-select-sm" name="mySelect" #type="ngModel" [ngStyle]="{'margin-bottom': '48px'}" [(ngModel)]="typeSelected" required [class.is-invalid]="type.invalid && (type.dirty || type.touched)" >
+        <option value="Basic">Basic</option>
+        <option value="Intermedy">Intermedy</option>
+        <option value="Delux">Delux</option>
+      </select>
+</div>
+
+<app-edit-profile-credit-card 
+        [chipImgPath]="'./../../../../assets/images/chip.svg'"
+        [logoImgPath]="'./../../../../assets/images/visa.svg'"
+        [frontBgImgPath]="'https://images.hdqwalls.com/wallpapers/ondes-abstract-4k-wd.jpg'"
+        [backBgImgPath]="'https://images.hdqwalls.com/wallpapers/ondes-abstract-4k-wd.jpg'"
+        [cardNumberFormat]="cardNumberFormat"
+        [cardNumberMask]="cardNumberMask"
+        (submitEvent)="onSubmitEvent($event)">
+        </app-edit-profile-credit-card>
+
+<div class="form-group mb-div-inicio" [ngStyle]="{'margin-bottom':'60px', 'margin-top': '-20px'}">
+    <button type="submit" id="btn-save" class="form-control btn btn-primary rounded submit px-3 mt-2 mb-2">guardar datos 
+    </button>
+</div>
+</form>

@@ -1,0 +1,88 @@
+<div [ngStyle]="{'background': 'url('+img+')', 'height': '263px', 'background-size': '55%', 'background-color': 'white', 'margin-bottom':'-10px', 'text-align': 'inherit', 'background-repeat': 'no-repeat', 'background-position': 'center'}">
+    <div class="row no-gutters">
+        <div  class="col-auto">
+            <button routerLink="/tienda"   class="btn  btn-link text-dark menu-btn"><img id="mw-image" src="{{path}}images/previus.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h6 id="title-description">{{title_1}}</h6>
+            </div>
+            <div class="col-12">
+                <p id="param-description">{{paragraphs_1}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="hr-design">
+<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form class="signin-form">
+                    <div class="form-group mb-3">
+                        <textarea class="form-control" id="direccion" placeholder="Agregar nota del producto" required></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="hr-design">
+<div class="container mt-5" >        
+    <div class="container" id="mt-cont-recom"></div>        
+    <div class="row">
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2" *ngFor="let prod of productArray">
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body">
+                    <div class="container cont-card-body" >
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- <div class="badge badge-success float-left mt-1 ml-card">10% off</div>-->
+                            </div>
+                            <div class="col-6">
+                                <!-- <button class="btn btn-sm btn-link float-right p-0 ml-card-2"><i class="bi bi-heart"></i></button>-->
+                            </div>
+                        </div>
+                    </div>
+                    <figure class="product-image"><img src="{{prod.img}}" alt="" class=""></figure>
+                    <a class="text-dark mb-1 mt-2 h6 d-block">{{prod.name}}</a>
+                    <p class="text-secondary small mb-3 mt-2">{{prod.description}}</p>
+                    <h5 class="text-success font-weight-normal mb-0">$ {{prod.price}}</h5>
+                    <button (click)="addCart(prod)" routerLink="/carrito" id="rounded-btn" class="btn btn-default button-rounded-36 shadow-sm float-bottom-right"><i id="align-item" class="material-icons md-18">shopping_cart</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container cont-inf" >
+    <div class="row">
+        <div class="col-8">
+            <button type="button" class="btn btn-link text-dark menu-btn" (click)="removeItem()"><img src="{{path}}img/less.svg" [ngStyle]="{'max-width':'35px'}" class="img-more" alt=""></button>
+            <button class="btn btn-link text-dark menu-btn">
+                <img src="{{path}}img/center.svg" [ngStyle]="{'max-width':'42px', 'margin-left': '5px'}" class="img-more" alt="">
+                <h5 [ngStyle]="{'margin-top': '-39px', 'margin-left': '18px', 'font-size': '23px', 'color':'#123FB4'}" (click)="price_new(amount)">{{amount}}</h5>
+            </button>
+            <button type="button" class="btn btn-link text-dark menu-btn" (click)="addItem()"><img src="{{path}}img/more.svg" [ngStyle]="{'max-width':'35px', 'margin-left': '18px'}" class="img-more" alt=""></button>
+        </div>
+        <div class="col-4 div-look-more">
+            <h4 class="text-success font-weight-normal mb-0" id="price-title">$ {{price}}</h4>
+        </div>
+    </div>
+</div>
+
+
+<div class="container"  id="col-buttom">
+    <div class="row">
+        <button type="submit" routerLink="/carrito" class="form-control btn btn-primary rounded submit px-3 mt-0 mt-buttom" id="br-buttom">
+            Paquetes Adquiridos
+        </button>
+    </div>
+</div>
+
+
+
