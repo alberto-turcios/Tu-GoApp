@@ -1,0 +1,116 @@
+
+<section id="border-section">
+    <div class="container" id="cont-border">
+        <h5 id="details-title">{{title}}</h5>
+        <div class="row">
+            <div class="col-10">
+                <p id="description">{{description}}</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <div id="image-svg">
+                    <img class="mt-class-time" src="{{path}}img/world.svg" width="18px" height="18px" alt=""> 
+                    Clase en playa abierta
+                </div>            
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <div id="image-svg">
+                    <img class="mt-class-time" src="{{path}}images/calender-orders.svg" width="18px" height="18px" alt=""> 
+                    Horarios
+                </div>            
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <div class="time-hour">
+                    8:00am-9:30am
+                </div>       
+                <div class="time-hour">
+                    1:00pm-2:30am
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5">
+                <p id="value-complemento">Que Incluye?</p> 
+            </div>
+            <div class="col-7">
+                <hr class="hr-orders">
+            </div>
+        </div>
+
+        <div class="row" [ngStyle]="{'margin-top': '-30px'}">
+            <div class="col-12"  >
+                <div id="image-svg">
+                    <img class="mt-class-time" src="{{path}}img/check-approved.svg" width="18px" height="18px" alt=""> 
+                    Instructor personal
+                </div>            
+            </div>
+            <div class="col-12"  >
+                <div id="image-svg">
+                    <img class="mt-class-time" src="{{path}}img/check-approved.svg" width="18px" height="18px" alt=""> 
+                    Tabla de surf a corde a tu medida
+                </div>            
+            </div>
+            <div class="col-12" >
+                <div id="image-svg">
+                    <img class="mt-class-time" src="{{path}}img/check-approved.svg" width="18px" height="18px" alt=""> 
+                    Chaleco deseguridad
+                </div>            
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5">
+                <p id="value-complemento">Sugerencias</p> 
+            </div>
+            <div class="col-7">
+                <hr class="hr-orders">
+            </div>
+        </div>
+
+        <div class="row" [ngStyle]="{'margin-top': '-30px'}">
+            <div class="col-12"  >
+                <div id="image-svg">
+                    <img class="mt-class-time" src="{{path}}img/bookmark.svg" width="18px" height="18px" alt=""> 
+                    Saber nadar
+                </div>            
+            </div>
+            <div class="col-12"  >
+                <div id="image-svg">
+                    <img class="mt-class-time" src="{{path}}img/bookmark.svg" width="18px" height="18px" alt=""> 
+                    respetar las instruciones del instructor
+                </div>            
+            </div>
+        </div>
+
+        <div class="container " >
+            <div class="row cont-inf">
+                <div class="col-5 div-look-more">
+                    <h4 class="text-success font-weight-normal mb-0" id="price-title"> <strong [ngStyle]="{'color': '#333', 'font-size': '16px'}">Desde: </strong>$ {{price}}</h4>
+                </div>
+                <div class="col-7">
+                    <button type="submit" routerLink="/disponibilidad/orden" id="pay-now" class="form-control btn btn-primary rounded submit px-3">Ver Disponibilidad
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container"[ngStyle]="{'margin-top': '40px'}">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+</section>

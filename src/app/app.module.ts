@@ -93,6 +93,9 @@ import { PreviewCateogryComponent } from './page/preview-cateogry/preview-cateog
 import { HeaderDetailsComponent } from './modules/header-details/header-details.component';
 import { FoodDetailsFormComponent } from './page/food-details/food-details-form/food-details-form.component';
 import { FoodRatingsFormComponent } from './page/food-ratings/food-ratings-form/food-ratings-form.component';
+import { HeaderOrdersComponent } from './modules/header-orders/header-orders.component';
+import { PreviewCategoryFormComponent } from './page/preview-cateogry/preview-category-form/preview-category-form.component';
+import { AvailabilityFormComponent } from './page/availability/availability-form/availability-form.component';
 
 
 @NgModule({
@@ -169,6 +172,9 @@ import { FoodRatingsFormComponent } from './page/food-ratings/food-ratings-form/
     HeaderDetailsComponent,
     FoodDetailsFormComponent,
     FoodRatingsFormComponent,
+    HeaderOrdersComponent,
+    PreviewCategoryFormComponent,
+    AvailabilityFormComponent,
 
   ],
   imports: [

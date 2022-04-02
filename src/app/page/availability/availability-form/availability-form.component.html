@@ -1,0 +1,29 @@
+
+<section id="border-section">
+    <div class="container" id="cont-border">
+        <h5 id="details-title">{{title}}</h5>
+        <div class="row">
+            <div class="col-10">
+                <p id="description">{{description}}</p>
+            </div>
+        </div>
+        
+        <div class="container " >
+            <div class="row cont-inf">
+                <div class="col-5 div-look-more">
+                    <h4 class="text-success font-weight-normal mb-0" id="price-title"> <strong [ngStyle]="{'color': '#333', 'font-size': '16px'}">Desde: </strong>$ {{price}}</h4>
+                </div>
+                <div class="col-7">
+                    <button type="submit" routerLink="/disponibilidad/orden" id="pay-now" class="form-control btn btn-primary rounded submit px-3">Pagar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container"[ngStyle]="{'margin-top': '40px'}">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+</section>
