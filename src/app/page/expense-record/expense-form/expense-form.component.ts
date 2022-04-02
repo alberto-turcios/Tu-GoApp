@@ -9,9 +9,7 @@ declare const price: String;
 @Component({
   selector: 'app-expense-form',
   templateUrl: './expense-form.component.html',
-  styleUrls: ['./expense-form.component.css',  
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./expense-form.component.css']
 })
 export class ExpenseFormComponent implements OnInit {
   path: string = Path.url;

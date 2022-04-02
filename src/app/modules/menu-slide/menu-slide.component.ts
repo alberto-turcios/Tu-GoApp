@@ -8,9 +8,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-menu-slide',
   templateUrl: './menu-slide.component.html',
-  styleUrls: ['./menu-slide.component.css', 
-  '../../../assets/css/app.css', 
-  '../../../assets/css/style.css' 
+  styleUrls: ['./menu-slide.component.css'
 ]
 })
 export class MenuSlideComponent implements OnInit {

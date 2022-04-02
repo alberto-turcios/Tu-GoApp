@@ -8,8 +8,7 @@ declare const login: any;
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: [
-    './register.component.css',
-    '../../../assets/css/style.css'  
+    './register.component.css'
   ]
 })
 export class RegisterComponent implements OnInit {

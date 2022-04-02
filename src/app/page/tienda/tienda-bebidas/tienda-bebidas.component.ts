@@ -10,9 +10,7 @@ declare const title: String;
 @Component({
   selector: 'app-tienda-bebidas',
   templateUrl: './tienda-bebidas.component.html',
-  styleUrls: ['./tienda-bebidas.component.css', 
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./tienda-bebidas.component.css']
 })
 
 

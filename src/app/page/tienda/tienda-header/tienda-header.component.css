@@ -1,9 +1,11 @@
+@import url('https://dl.dropboxusercontent.com/s/gts2fs9ng1p9jvg/app.css?dl=0');
+@import url('https://dl.dropboxusercontent.com/s/p37l2zgzisztj7s/style.css?dl=0');
+
 html{
     background: rgb(4,129,220);
     background: linear-gradient(90deg, rgba(4,129,220,1) 16%, rgba(4,204,236,1) 66%);
     overflow-x: hidden;
 }
-
 
 .header-fa{
     height: 250px;
@@ -11,8 +13,12 @@ html{
     background-repeat: no-repeat;
     background-size: 100%;
     margin-bottom: -10px;
+}
 
-
+#pageTitle{
+    margin-top: 7px;
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 
 .i-btn{

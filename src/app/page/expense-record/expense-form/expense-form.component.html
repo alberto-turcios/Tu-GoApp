@@ -3,7 +3,7 @@
         <div class="container" id="container-title-one">
             <div class="row">
                 <div class="col-8">
-                    <h6 class="subtitle sb-heading" >Tu Actividad</h6>
+                    <h2 class="subtitle sb-heading" >Tu Actividad</h2>
                 </div>
             </div>
             <div class="row" id="row-expense-date">
@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col pl-0 ml-5">
                         <p class="text-secondary mb-1" id="text-secondary-ml" >Balance de Gastos</p>
-                        <h4 class="text-dark my-0" id="price-text">$ {{price}}</h4>
+                        <h4 [ngStyle]="{'padding-top': '15px', 'padding-bottom': '20px'}" class="text-dark my-0" id="price-text">$ {{price}}</h4>
                     </div>
                 </div>
                 <div class="col-12" id="chart-style">
@@ -35,7 +35,7 @@
                         <i class="bi bi-credit-card"></i>
                     </div>
                     <div class="col-10">
-                        <h6  id="heading-hotel">Gastos dentro del  hotel</h6>
+                        <h4  id="heading-hotel">Gastos dentro del  hotel</h4>
                     </div>
                 </div>
             </div>

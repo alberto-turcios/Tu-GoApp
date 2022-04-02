@@ -8,9 +8,7 @@ declare const price: String;
 @Component({
   selector: 'app-compra-finalizada-form',
   templateUrl: './compra-finalizada-form.component.html',
-  styleUrls: ['./compra-finalizada-form.component.css',  
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./compra-finalizada-form.component.css']
 })
 export class CompraFinalizadaFormComponent implements OnInit {
   path: string = Path.url;

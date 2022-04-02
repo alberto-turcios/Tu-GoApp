@@ -5,9 +5,7 @@ import { Path } from '../../../../app/config.js';
 @Component({
   selector: 'app-preview-category-form',
   templateUrl: './preview-category-form.component.html',
-  styleUrls: ['./preview-category-form.component.css',
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css']
+  styleUrls: ['./preview-category-form.component.css']
 })
 export class PreviewCategoryFormComponent implements OnInit {
   path: string = Path.url;

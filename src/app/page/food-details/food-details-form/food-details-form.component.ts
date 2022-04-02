@@ -4,9 +4,7 @@ import { Path } from '../../../../app/config.js';
 @Component({
   selector: 'app-food-details-form',
   templateUrl: './food-details-form.component.html',
-  styleUrls: ['./food-details-form.component.css',
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css']
+  styleUrls: ['./food-details-form.component.css']
 })
 export class FoodDetailsFormComponent implements OnInit {
   path: string = Path.url;

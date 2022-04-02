@@ -2,7 +2,7 @@
     <div class="container" id="mt-cont">
         <div class="row">
             <div class="col-8">
-                <h6 class="subtitle sb-heading" >Productos de Interes</h6>
+                <h4 class="subtitle sb-heading" >Productos de Interes</h4>
             </div>
             <div class="col-4 div-look-more">
                 <a href="all-products.html" class="float-right small">Ver Mas <i class="bi bi-arrow-right ml-2 "></i></a>
@@ -19,14 +19,14 @@
                                 <div class="badge badge-success float-left mt-1 ml-card">{{prod.descount}}</div>
                             </div>
                             <div class="col-6">
-                                <button class="btn btn-sm btn-link float-right p-0 ml-card-2"><i class="bi bi-heart"></i></button>
+                                <button [ngStyle]="{'color': '#F88922'}" class="btn btn-sm btn-link float-right p-0 ml-card-2"><i class="bi bi-heart"></i></button>
                             </div>
                         </div>
                     </div>
                     <figure class="product-image"><img src="{{prod.img}}" alt="" class=""></figure>
                     <a class="text-dark mb-1 mt-2 h6 d-block">{{prod.name}}</a>
                     <p class="text-secondary small mb-3 mt-2">{{prod.description}}</p>
-                    <h5 class="text-success font-weight-normal mb-0">$ {{prod.price}}</h5>
+                    <h2 class="text-success font-weight-normal mb-0">$ {{prod.price}}</h2>
                     <button id="rounded-btn" (click)="addCart(prod)" routerLink="/carrito" class="btn btn-default button-rounded-36 shadow-sm float-bottom-right"><i id="align-item" class="material-icons md-18">shopping_cart</i></button>
                 </div>
             </div>

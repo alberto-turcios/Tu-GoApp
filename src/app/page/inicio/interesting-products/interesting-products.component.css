@@ -1,10 +1,14 @@
+@import url('https://dl.dropboxusercontent.com/s/gts2fs9ng1p9jvg/app.css?dl=0');
+@import url('https://dl.dropboxusercontent.com/s/p37l2zgzisztj7s/style.css?dl=0');
+
+
 .sb-heading{
     color:#3e3e3e; 
     margin-top: -7px;
 }
 
 .div-look-more{
-    margin-top:08px;
+    margin-top:0px;
 }
 
 .cont-card-body{
@@ -12,7 +16,7 @@
 }
 
 #mt-cont{
-    margin-top:-10px; 
+    margin-top:0px; 
     margin-bottom:-10px;
 }
 

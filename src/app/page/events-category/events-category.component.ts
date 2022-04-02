@@ -7,9 +7,7 @@ declare const paragraphs:String;
 @Component({
   selector: 'app-events-category',
   templateUrl: './events-category.component.html',
-  styleUrls: ['./events-category.component.css', 
-  '../../../assets/css/app.css', 
-  '../../../assets/css/style.css']
+  styleUrls: ['./events-category.component.css']
 })
 export class EventsCategoryComponent implements OnInit {
   path: string = Path.url;

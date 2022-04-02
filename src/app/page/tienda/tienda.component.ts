@@ -8,9 +8,7 @@ declare const paragraphs:String;
 @Component({
   selector: 'app-tienda',
   templateUrl: './tienda.component.html',
-  styleUrls: ['./tienda.component.css', 
-  '../../../assets/css/app.css', 
-  '../../../assets/css/style.css']
+  styleUrls: ['./tienda.component.css']
 })
 export class TiendaComponent implements OnInit {
   path: string = Path.url;

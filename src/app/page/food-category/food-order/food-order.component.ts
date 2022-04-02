@@ -9,9 +9,7 @@ declare const time: String;
 @Component({
   selector: 'app-food-order',
   templateUrl: './food-order.component.html',
-  styleUrls: ['./food-order.component.css',   
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./food-order.component.css']
 })
 export class FoodOrderComponent implements OnInit {
   path: string = Path.url;

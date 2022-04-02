@@ -8,9 +8,7 @@ declare const title: String;
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
   styleUrls: [
-    './inicio.component.css', 
-    '../../../assets/css/app.css', 
-    '../../../assets/css/style.css'
+    './inicio.component.css'
 ]
 })
 export class InicioComponent implements OnInit {

@@ -9,9 +9,7 @@ import { DefaultComponentLabels } from './shared/default-component-labels';
 @Component({
   selector: 'app-edit-profile-credit-card',
   templateUrl: './edit-profile-credit-card.component.html',
-  styleUrls: ['./edit-profile-credit-card.component.css',  
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./edit-profile-credit-card.component.css']
 })
 export class EditProfileCreditCardComponent implements OnInit {
 

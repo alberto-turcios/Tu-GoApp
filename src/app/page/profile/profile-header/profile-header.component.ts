@@ -8,9 +8,7 @@ declare const name: String;
 @Component({
   selector: 'app-profile-header',
   templateUrl: './profile-header.component.html',
-  styleUrls: ['./profile-header.component.css',  
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./profile-header.component.css']
 })
 export class ProfileHeaderComponent implements OnInit {
   path: string = Path.url;

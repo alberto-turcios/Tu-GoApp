@@ -8,7 +8,6 @@ declare const slide: any;
   selector: 'app-food-promotion',
   templateUrl: './food-promotion.component.html',
   styleUrls: ['./food-promotion.component.css', 
-  '../../../../assets/css/app.css', 
   '../../../../assets/css/style.css',]
 })
 export class FoodPromotionComponent implements OnInit {

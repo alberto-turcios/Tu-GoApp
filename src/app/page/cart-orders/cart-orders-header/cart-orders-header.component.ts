@@ -10,9 +10,7 @@ declare const price: String;
 @Component({
   selector: 'app-cart-orders-form',
   templateUrl: './cart-orders-header.component.html',
-  styleUrls: ['./cart-orders-header.component.css',  
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./cart-orders-header.component.css']
 })
 export class CartOrdersHeaderComponent implements OnInit {
   path: string = Path.url;

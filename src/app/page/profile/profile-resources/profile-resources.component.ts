@@ -9,9 +9,7 @@ declare const price: String;
 @Component({
   selector: 'app-profile-resources',
   templateUrl: './profile-resources.component.html',
-  styleUrls: ['./profile-resources.component.css',  
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./profile-resources.component.css']
 })
 export class ProfileResourcesComponent implements OnInit {
   path: string = Path.url;

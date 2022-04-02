@@ -12,9 +12,7 @@ declare const paragraphs:String;
 @Component({
   selector: 'app-tienda-header',
   templateUrl: './tienda-header.component.html',
-  styleUrls: ['./tienda-header.component.css',
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css']
+  styleUrls: ['./tienda-header.component.css']
 })
 
 export class TiendaHeaderComponent implements OnInit {

@@ -13,7 +13,6 @@ declare const slide: any;
   selector: 'app-food-category',
   templateUrl: './food-category.component.html',
   styleUrls: ['./food-category.component.css',
-  '../../../assets/css/app.css', 
   '../../../assets/css/style.css'
 ]
 })

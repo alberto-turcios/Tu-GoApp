@@ -1,14 +1,13 @@
 <div class="container" id="card-orders">
-    
     <div class="row" id="ml-price">
         <div class="col car-align">
-            <h6 class="subtitle sb-heading" >SubTotal</h6>
+            <h3 [ngStyle]="{'font-weight': '600'}" class="subtitle sb-heading" >SubTotal</h3>
         </div>
         <div class="col car-align"  >
-            <h6 class="subtitle sb-heading" >IVA</h6>
+            <h3 [ngStyle]="{'font-weight': '600'}" class="subtitle sb-heading" >IVA</h3>
         </div>
         <div class="col car-align">
-            <h6 class="subtitle sb-heading" >Descuento</h6>
+            <h3 [ngStyle]="{'font-weight': '600'}" class="subtitle sb-heading" >Descuento</h3>
         </div>
     </div>
     <div class="row" id="ml-price-head">
@@ -27,7 +26,7 @@
         <div class="col car-align">
         </div>
         <div class="col car-align"  >
-            <h6 class="subtitle sb-heading" >TOTAL</h6>
+            <h2 [ngStyle]="{'font-weight': '600'}" class="subtitle sb-heading" >TOTAL</h2>
         </div>
         <div class="col car-align">
         </div>
@@ -36,7 +35,7 @@
         <div class="col car-align">
         </div>
         <div class="col car-align"  >
-            <h3 class=" sb-heading" >$10.40</h3>
+            <h3 [ngStyle]="{'margin-top': '-15px'}" class=" sb-heading" >$10.40</h3>
         </div>
         <div class="col car-align">
         </div>
@@ -59,12 +58,12 @@
                     </button>   
                 </div>
                 <div class="col-4">
-                    <h6 class="subtitle sb-heading" style="margin-top:27px;" id="cuidado-personal">{{number}}</h6>
+                    <h3 class="subtitle sb-heading" style="margin-top:27px;" id="cuidado-personal">{{number}}</h3>
                 </div>
             </div>
         </div>
         <div class="col"  [ngStyle]="{'text-align': 'right', 'margin-right': '15px', 'margin-top': '38px'}">
-            <h5 class="sb-heading" >$10.40</h5>
+            <h2 [ngStyle]="{'margin-top': '-6px'}">$10.40</h2>
         </div>
     </div>
 </div>

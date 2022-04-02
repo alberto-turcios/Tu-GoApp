@@ -9,9 +9,7 @@ declare const price: String;
 @Component({
   selector: 'app-confirmar-pago-form',
   templateUrl: './confirmar-pago-form.component.html',
-  styleUrls: ['./confirmar-pago-form.component.css',  
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./confirmar-pago-form.component.css']
 })
 export class ConfirmarPagoFormComponent implements OnInit {
   path: string = Path.url;

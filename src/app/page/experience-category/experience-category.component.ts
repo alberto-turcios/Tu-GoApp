@@ -10,9 +10,7 @@ declare const carousel: String;
 @Component({
   selector: 'app-experience-category',
   templateUrl: './experience-category.component.html',
-  styleUrls: ['./experience-category.component.css', 
-  '../../../assets/css/app.css', 
-  '../../../assets/css/style.css']})
+  styleUrls: ['./experience-category.component.css']})
 export class ExperienceCategoryComponent implements OnInit {
   path: string = Path.url;
   title = 'Disfruta';

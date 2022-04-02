@@ -113,12 +113,12 @@
                     <button type="button" class="btn btn-link text-dark menu-btn" (click)="removeItem()"><img src="{{path}}img/less.svg" [ngStyle]="{'max-width':'35px'}" class="img-more" alt=""></button>
                     <button class="btn btn-link text-dark menu-btn">
                         <img src="{{path}}img/center.svg" [ngStyle]="{'max-width':'42px', 'margin-left': '5px'}" class="img-more" alt="">
-                        <h5 [ngStyle]="{'margin-top': '-39px', 'margin-left': '18px', 'font-size': '23px', 'color':'#123FB4'}" (click)="price_new(amount)">{{amount}}</h5>
+                        <h5 [ngStyle]="{'margin-top': '-31px', 'margin-left': '19px', 'font-size': '23px', 'color':'#123FB4'}" (click)="price_new(amount)">{{amount}}</h5>
                     </button>
                     <button type="button" class="btn btn-link text-dark menu-btn" (click)="addItem()"><img src="{{path}}img/more.svg" [ngStyle]="{'max-width':'35px', 'margin-left': '18px'}" class="img-more" alt=""></button>
                 </div>
                 <div class="col-4 div-look-more">
-                    <h4 class="text-success font-weight-normal mb-0" id="price-title">$ {{price}}</h4>
+                    <h1 class="text-success font-weight-normal mb-0" id="price-title">$ {{price}}</h1>
                 </div>
             </div>
         </div>

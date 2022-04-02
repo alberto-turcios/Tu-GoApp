@@ -11,9 +11,7 @@ declare const carousel: String;
 @Component({
   selector: 'app-header-details',
   templateUrl: './header-details.component.html',
-  styleUrls: ['./header-details.component.css', 
-  '../../../assets/css/app.css', 
-  '../../../assets/css/style.css']
+  styleUrls: ['./header-details.component.css']
 })
 export class HeaderDetailsComponent implements OnInit {
   path: string = Path.url;

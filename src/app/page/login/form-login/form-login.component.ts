@@ -12,8 +12,7 @@ declare const login: any;
 @Component({
   selector: 'app-form-login',
   templateUrl: './form-login.component.html',
-  styleUrls: ['./form-login.component.css', 
-  '../../../../assets/css/style.css' , 
+  styleUrls: ['./form-login.component.css' 
 ],
 encapsulation: ViewEncapsulation.None, 
 })

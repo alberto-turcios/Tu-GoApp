@@ -4,9 +4,7 @@ import { Path } from '../../../../app/config.js';
 @Component({
   selector: 'app-food-ratings-form',
   templateUrl: './food-ratings-form.component.html',
-  styleUrls: ['./food-ratings-form.component.css',
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css']
+  styleUrls: ['./food-ratings-form.component.css']
 })
 export class FoodRatingsFormComponent implements OnInit {
   path: string = Path.url;

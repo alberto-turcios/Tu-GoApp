@@ -8,20 +8,20 @@
   <div class="card-form__inner">
     <div class="card-input">
       <label for="cardNumber" class="card-input__label">Numero de Tarjeta</label>
-      <input class="form-control  card-input__input" type="tel" [id]="cardNumberId" [attr.maxlength]="cardNumberMaxLength"
+      <input class="form-control form-select" type="tel" [id]="cardNumberId" [attr.maxlength]="cardNumberMaxLength"
         [value]="displayedCardNumber" (input)="onCardNumberChange($event)" (focus)="onCardNumberFocus()"
         (blur)="onCardNumberBlur()" autocomplete="off" />
     </div>
     <div class="card-input">
       <label for="cardName" class="card-input__label">Nombre del titular de la tarjeta</label>
-      <input class="form-control  card-input__input" type="text" [id]="cardNameId" [(ngModel)]="cardModel.cardName"
+      <input class="form-control form-select" type="text" [id]="cardNameId" [(ngModel)]="cardModel.cardName"
         (keyup)='onCardNameKeyPress($event)' autocomplete="off" (focus)="onCardNameFocus()" (blur)="onBlur()" />
     </div>
     <div class="card-form__row">
       <div class="card-form__col">
         <div class="card-form__group">
           <label for="cardMonth" class="card-input__label">Fecha de Expiracion</label>
-          <select class="form-control  card-input__input -select" id="monthSelect" [(ngModel)]="cardModel.expirationMonth"
+          <select [ngStyle]="{'background': '#eff0f6', 'border': 'none', 'border-radius': '12px'}"  class="form-control  card-input__input -select" id="monthSelect" [(ngModel)]="cardModel.expirationMonth"
             (focus)="onDateFocus()" (blur)="onBlur()">
             <option value disabled selected>Mes
             </option>
@@ -30,7 +30,7 @@
               {{generateMonthValue((i+1))}}
             </option>
           </select>
-          <select class="form-control card-input__input -select" [id]="yearSelectId" [(ngModel)]="cardModel.expirationYear"
+          <select [ngStyle]="{'background': '#eff0f6', 'border': 'none', 'border-radius': '12px'}" class="form-control card-input__input -select" [id]="yearSelectId" [(ngModel)]="cardModel.expirationYear"
             (change)="onYearChange()" (focus)="onDateFocus()" (blur)="onBlur()">
             <option value disabled selected>Año</option>
             <option *ngFor="let element of [].constructor(12); let i = index" [value]="minCardYear + i">
@@ -42,7 +42,7 @@
       <div class="card-form__col -cvv">
         <div class="card-input">
           <label for="cardCvv" class="card-input__label">CVV</label>
-          <input class="form-control card-input__input" type="tel" id="cardCvvId" maxlength="4" autocomplete="off"
+          <input class="form-control form-select" type="tel" id="cardCvvId" maxlength="4" autocomplete="off"
             [value]="displayedCvv" (blur)="onCvvBlur()" (focus)="onCvvFocus()" (input)="onCvvChange($event)" />
         </div>
       </div>

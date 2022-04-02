@@ -8,8 +8,7 @@ declare const login: any;
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: [
-    './login.component.css',
-    '../../../assets/css/style.css' 
+    './login.component.css'
   ],
   encapsulation: ViewEncapsulation.None, 
 

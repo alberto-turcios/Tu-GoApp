@@ -10,9 +10,7 @@ declare const price: String;
 @Component({
   selector: 'app-simple-header',
   templateUrl: './simple-header.component.html',
-  styleUrls: ['./simple-header.component.css',  
-  '../../../assets/css/app.css', 
-  '../../../assets/css/style.css',]
+  styleUrls: ['./simple-header.component.css']
 })
 export class SimpleHeaderComponent implements OnInit {
   path: string = Path.url;

@@ -5,9 +5,7 @@ import { Path } from '../../../../app/config.js';
 @Component({
   selector: 'app-availability-form',
   templateUrl: './availability-form.component.html',
-  styleUrls: ['./availability-form.component.css',
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css']
+  styleUrls: ['./availability-form.component.css']
 })
 export class AvailabilityFormComponent implements OnInit {
   path: string = Path.url;

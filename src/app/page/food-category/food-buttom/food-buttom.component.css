@@ -1,3 +1,7 @@
+@import url('https://dl.dropboxusercontent.com/s/gts2fs9ng1p9jvg/app.css?dl=0');
+@import url('https://dl.dropboxusercontent.com/s/p37l2zgzisztj7s/style.css?dl=0');
+
+
 .mt-food-row{
     margin-top:100px;
 }
@@ -18,4 +22,5 @@
 
 .color-h5{
     color: #707070;
+    font-size: 16px;
 }

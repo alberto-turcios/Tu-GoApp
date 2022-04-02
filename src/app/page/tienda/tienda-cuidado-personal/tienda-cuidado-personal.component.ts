@@ -7,9 +7,7 @@ declare const title: String;
 @Component({
   selector: 'app-tienda-cuidado-personal',
   templateUrl: './tienda-cuidado-personal.component.html',
-  styleUrls: ['./tienda-cuidado-personal.component.css', 
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./tienda-cuidado-personal.component.css']
 })
 export class TiendaCuidadoPersonalComponent implements OnInit {
   path: string = Path.url;

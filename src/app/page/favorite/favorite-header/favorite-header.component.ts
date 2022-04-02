@@ -10,9 +10,7 @@ declare const title: String;
 @Component({
   selector: 'app-favorite-form',
   templateUrl: './favorite-header.component.html',
-  styleUrls: ['./favorite-header.component.css',  
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./favorite-header.component.css']
 })
 export class FavoriteHeaderComponent implements OnInit {
   path: string = Path.url;

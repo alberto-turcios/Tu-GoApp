@@ -10,9 +10,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 @Component({
   selector: 'app-edit-profile-form',
   templateUrl: './edit-profile-form.component.html',
-  styleUrls: ['./edit-profile-form.component.css',  
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./edit-profile-form.component.css']
 })
 export class EditProfileFormComponent implements OnInit {
   path: string = Path.url;

@@ -11,9 +11,7 @@ declare const price: String;
 @Component({
   selector: 'app-next-header',
   templateUrl: './next-header.component.html',
-  styleUrls: ['./next-header.component.css',  
-  '../../../assets/css/app.css', 
-  '../../../assets/css/style.css',]
+  styleUrls: ['./next-header.component.css']
 })
 export class NextHeaderComponent implements OnInit {
   path: string = Path.url;

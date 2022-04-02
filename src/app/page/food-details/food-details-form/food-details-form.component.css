@@ -1,3 +1,10 @@
+@import url('https://dl.dropboxusercontent.com/s/gts2fs9ng1p9jvg/app.css?dl=0');
+@import url('https://dl.dropboxusercontent.com/s/p37l2zgzisztj7s/style.css?dl=0');
+
+html, body{
+    background-color: #fcfcfc;
+}
+
 #border-section{
     margin-top: -122px;
     background-color: white;
@@ -191,7 +198,7 @@
 }
 
 #price-title{
-    margin-top:-11px;
+    margin-top: 0px;
     text-align: center;
 }
 
@@ -333,7 +340,7 @@
 }
 
 .div-look-more{
-    margin-top:08px;
+    margin-top:0px;
 }
 
 .cont-card-body{

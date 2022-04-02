@@ -10,9 +10,7 @@ declare const name: String;
 @Component({
   selector: 'app-edit-profile-header',
   templateUrl: './edit-profile-header.component.html',
-  styleUrls: ['./edit-profile-header.component.css',  
-  '../../../../assets/css/app.css', 
-  '../../../../assets/css/style.css',]
+  styleUrls: ['./edit-profile-header.component.css']
 })
 export class EditProfileHeaderComponent implements OnInit {
 
