@@ -1,6 +1,6 @@
 <section>
     <div class="container">
-            <div class="row " id="mt-row">
+            <div class="row " id="mt-row" [ngStyle]="{'margin-top': '15px'}">
                 <div class="col-6" id="col-mt">
                     <i class="icon-svg bi bi-cart3"></i><a id="number-data" class="a-product">{{cartItem}}</a>
                 </div>
@@ -26,7 +26,7 @@
                 <button type="button" id="btn-less"  class="btn btn-link text-dark menu-btn" (click)="removeItem(getCartDetail);" ><img src="{{path}}img/less.svg"  [ngStyle]="{'max-width':'25px', 'margin-top':'6px'}" class="img-more" alt=""></button>
                 <button class="btn btn-link text-dark menu-btn">
                     <img src="{{path}}img/center.svg" [ngStyle]="{'max-width':'35px', 'margin-left': '7px'}" class="img-more" alt="">
-                    <h5 [ngStyle]="{'margin-top': '-35px', 'margin-left': '17px', 'font-size': '23px', 'color':'#123FB4'}" (click)="price_new(amount)">{{getCartDetail.qty}}</h5>
+                    <h5 [ngStyle]="{'margin-top': '-28px', 'margin-left': '17px', 'font-size': '23px', 'color':'#123FB4'}" (click)="price_new(amount)">{{getCartDetail.qty}}</h5>
                 </button>
                 <button type="button" class="btn btn-link text-dark menu-btn" (click)="addItem(getCartDetail);" ><img src="{{path}}img/more.svg" [ngStyle]="{'max-width':'25px', 'margin-top':'7px','margin-left': '18px'}" class="img-more" alt=""></button>
             </div>
@@ -53,7 +53,7 @@
             <div class="col"  >
                 <div class="signin-form">
                     <div class="form-group mb-3 mt-3">
-                        <input  type="text"  id="code-promotion" class="form-control" placeholder="Codigo promocional" required> 
+                        <input [ngStyle]="{'background-color': '#eff0f6'}"  type="text"  id="code-promotion" class="form-control" placeholder="Codigo promocional" required> 
                     </div>
                 </div>
             </div>
@@ -64,44 +64,44 @@
             </div>
         </div>
         <div class="row" id="ml-price">
-            <div class="col card-align">
-                <h6 class="subtitle sb-heading" >SubTotal</h6>
+            <div class="col car-align">
+                <h3 [ngStyle]="{'font-weight': '600'}" class="subtitle sb-heading" >SubTotal</h3>
             </div>
-            <div class="col card-align"  >
-                <h6 class="subtitle sb-heading" >IVA</h6>
+            <div class="col car-align"  >
+                <h3 [ngStyle]="{'font-weight': '600'}" class="subtitle sb-heading" >IVA</h3>
             </div>
-            <div class="col card-align">
-                <h6 class="subtitle sb-heading" >Descuento</h6>
+            <div class="col car-align">
+                <h3 [ngStyle]="{'font-weight': '600'}" class="subtitle sb-heading" >Descuento</h3>
             </div>
         </div>
         <div class="row" id="ml-price-head">
-            <div class="col card-align">
+            <div class="col car-align">
                 <p class="subtitle sb-heading" >$10.40</p>
             </div>
-            <div class="col card-align"  >
+            <div class="col car-align"  >
                 <p class="subtitle sb-heading" >$1.40</p>
             </div>
-            <div class="col card-align">
+            <div class="col car-align">
                 <p class="subtitle sb-heading" >$1.40</p>
             </div>
         </div>
         <hr class="class-3" />
         <div class="row" id="price-total">
-            <div class="col card-align">
+            <div class="col car-align">
             </div>
-            <div class="col card-align"  >
-                <h6 class="subtitle sb-heading" >TOTAL</h6>
+            <div class="col car-align"  >
+                <h2 [ngStyle]="{'font-weight': '600'}" class="subtitle sb-heading" >TOTAL</h2>
             </div>
-            <div class="col card-align">
+            <div class="col car-align">
             </div>
         </div>
         <div class="row" id="ml-price-head">
-            <div class="col card-align">
+            <div class="col car-align">
             </div>
-            <div class="col card-align"  >
-                <h3 class=" sb-heading" >$10.40</h3>
+            <div class="col car-align"  >
+                <h3 [ngStyle]="{'margin-top': '-15px'}" class=" sb-heading" >$10.40</h3>
             </div>
-            <div class="col card-align">
+            <div class="col car-align">
             </div>
         </div>
         <div class="container" id="col-text">
